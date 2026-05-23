@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aryann</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    background: linear-gradient(135deg,#1d2671,#c33764);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    overflow:auto;
+}
+
+.container{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    width:900px;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 0 30px rgba(0,0,0,0.3);
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.top-section{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.my-image{
+    width:280px;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 0 25px rgba(0,0,0,0.4);
+    transition:0.4s;
+}
+
+.my-image:hover{
+    transform:scale(1.03);
+}
+
+.text-section{
+    flex:1;
+}
+
+h1{
+    color:white;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#dcdcdc;
+    margin-bottom:25px;
+    font-weight:400;
+}
+
+.about{
+    color:white;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.hobbies{
+    margin-top:30px;
+    color:white;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.quote{
+    margin-top:25px;
+    font-style:italic;
+    color:#ffd6e8;
+    border-left:4px solid white;
+    padding-left:15px;
+}
+
+.insta-btn{
+    display:inline-block;
+    margin-top:30px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(45deg,#ff416c,#ff4b2b);
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(255,75,43,0.4);
+}
+
+.insta-btn:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 0 30px rgba(255,75,43,0.8);
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:#e0e0e0;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+    .top-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    .my-image{
+        width:220px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top-section">
+
+<img src="Photo 1.jpeg" alt="Aryan's Photo" class="my-image">
+
+<div class="text-section">
+
+<h1>Aryann</h1>
+
+<h2>Student • Coder • Dreamer</h2>
+
+<p class="about">
+Hey everyone! My name is <b>Aryan Kiran Dhere</b>. 
+I am currently in 12th grade and deeply passionate about coding and technology. 
+I love exploring new programming languages, creating projects, and learning how technology shapes the world around us.
+</p>
+
+<p class="hobbies">
+Apart from coding, I enjoy playing video games, spending time with friends and family, and creating memories with the people closest to me. 
+I believe life is not only about working hard but also about truly living every moment.
+</p>
+
+<p class="quote">
+“Being productive isn’t about completing a lot of Excel files or working all day. A truly productive day is when you spend time with your loved ones and actually live your life.”
+</p>
+
+<a href="https://www.instagram.com/eremitic.grim_/" target="_blank" class="insta-btn">
+Follow my Instagram
+</a>
+
+</div>
+</div>
+
+<div class="footer">
+Made by Aryann ✨
+</div>
+
+</div>
+
+</body>
+</html>
